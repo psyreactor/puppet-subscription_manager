@@ -58,6 +58,10 @@ class subscription_manager (
   $repo_ca_cert           = $subscription_manager::params::repo_ca_cert,
   $full_refresh_on_yum    = $subscription_manager::params::full_refresh_on_yum,
   $report_package_profile = $subscription_manager::params::report_package_profile,
+  $proxy_url              = $subscription_manager::params::proxy_url,
+  $proxy_port             = $subscription_manager::params::proxy_port,
+  $proxy_username         = $subscription_manager::params::proxy_username,
+  $proxy_password         = $subscription_manager::params::proxy_password,
 ) inherits subscription_manager::params {
   class { '::subscription_manager::install': } ->
   class { '::subscription_manager::config': }

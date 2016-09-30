@@ -15,4 +15,8 @@ class subscription_manager::params {
   $manage_repos = 1
   $full_refresh_on_yum = 0
   $report_package_profile = 1
+  $proxy_url = ''
+  $proxy_port = ''
+  $proxy_username = ''
+  $proxy_password = ''
 }
